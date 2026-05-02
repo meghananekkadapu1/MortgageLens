@@ -363,3 +363,7 @@ rm backend/knowledge_base/faiss_meta.pkl
 | Hallucination Score | Fraction of hedging phrases detected (lower = more confident, grounded) |
 | Factual Reliability | `1 − hallucination_score` displayed as a percentage |
 | KB Sources Used | Number of distinct knowledge base documents cited |
+
+
+NOTES
+**I have uploaded the Demo video in the github. please consider this instead of youtube link.**
