@@ -158,12 +158,3 @@ async def explain_from_upload(file: UploadFile = File(...)):
 async def eval_detection():
     """Run the rule-based detection test suite. No API key needed."""
     return run_detection_eval()
-
-
-@app.get("/knowledge-base", tags=["System"])
-async def list_knowledge_base():
-    from knowledge_base.documents import RAW_DOCS
-    return {
-        "count":     len(RAW_DOCS),
-        "documents": [{"title": t, "chars": len(d)} for t, d in RAW_DOCS.items()],
-    }
